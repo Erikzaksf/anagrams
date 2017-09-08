@@ -29,8 +29,8 @@ Method contained is tested with RSpec and meets passes all tests.
 
 
 * 1. Method should check if two words are anagrams and return:"Yes these are anagrams.".
-    input: "free reef"
-    output: "Yes these are anagrams."
+    input: "this", "hits"
+    output: "These are anagrams."
 
 * 2. Method should ignore letter case.
     input: "Free Reef"
