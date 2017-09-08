@@ -1,12 +1,7 @@
 # Anagrams
 
-This is a solo programming project for Epicodus that requires a Ruby method that will determine if a given :
-
-    Numbers divisible by 3 are replaced with "ping"
-    Numbers divisible by 5 are replaced with "pong"
-    Numbers divisible by 15 are replaced with "ping-pong"
-
-A user should be able to enter a new number and see new results over and over again.
+  This is a solo programming project for Epicodus that requires a Ruby method that
+  will determine if a given pair of words is an anagram.
 
 
 ### Prerequisites
