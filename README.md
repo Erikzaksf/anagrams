@@ -21,6 +21,7 @@ Method contained is tested with RSpec and meets passes all tests.
 ## Built With
 
 * Ruby
+* RSpec
 
 
 
@@ -29,21 +30,31 @@ Method contained is tested with RSpec and meets passes all tests.
 
 
 * 1. Method should check if two words are anagrams and return:"Yes these are anagrams.".
-    input: "this", "hits"
+    input: "this" "hits"
     output: "These are anagrams."
 
 * 2. Method should ignore letter case.
-    input: "Free Reef"
+    input: "Free" "Reef"
     output: "Yes these are anagrams."
 
 * 3. Once it is determined to be an anagram, then check if it is also a palindrome.
-    input: "Dial laid"
+    input: "Dial" "laid"
     output: "This is an anamgram and a palindrome!"
 
-* 4.
+* 4. Return phrase these are a palindrome and anagram when given two proper strings.
+    input: "free" "eerf"
+    output: "These words are palindromes and anagrams."
+
+* 5. Return phrase "Please make sure to use real words."" when given a string with no vowels.
+    input: "wwz","zww"
+    output: "Please make sure to use real words."
+
+* 6. Return phrase "These words are antigrams as they share no matching letters." when given a string with no matching letters
+    input:  "word z","sing, e"
+    output: "These words are antigrams and share no matching letters."
 
 
-## Authors
+## Author
 
 * **Erik Zakrzewski** - *Epicodus Bootcamp* -
 
