@@ -53,6 +53,11 @@ Method contained is tested with RSpec and meets passes all tests.
     input:  "word z","sing, e"
     output: "These words are antigrams and share no matching letters."
 
+* 7. Return phrase "This is an anagram" even when given symbols or spaces in the string.
+    input: "taco_cat" "tac_ocat!!"
+    output: "These are anagrams."
+
+
 
 ## Author
 
