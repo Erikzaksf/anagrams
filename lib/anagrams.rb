@@ -1,9 +1,11 @@
 class Evaluate
   attr_accessor(:word1, :word2)
 
-  def initialize(attributes)
-    @word1 = attributes.fetch(:word1)
-    @word2 = attributes.fetch(:word2)
+  def initialize(word1, word2)
+    @word1 = word1
+    @word2 = word2
+    # @word1 = attributes.fetch(:word1)
+    # @word2 = attributes.fetch(:word2)
   end
 
 
@@ -26,15 +28,15 @@ class Evaluate
       return answer = "These words are palindromes and anagrams."
     end
   end
-  def anagrams(word3, word2)
-    word3.gsub!(/\W+/, '')
+  def anagrams(word1, word2)
+    word1.gsub!(/\W+/, '')
     word2.gsub!(/\W+/, '')
-    word3.downcase!
+    word1.downcase!
     word2.downcase!
-    word3.delete! word2
-    if(word3.empty? == true)
+    word1.delete! word2
+    if(word1.empty? == true)
       answer = "These are anagrams."
-    else (word3.empty? == false)
+    else (word1.empty? == false)
       return answer = "These are not anagrams."
     end
   end
@@ -45,11 +47,11 @@ class Evaluate
       return answer = "Please make sure to use real words."
     end
   end
-  def antigrams(word3, word2)
-    word3.gsub!(/\W+/, '')
+  def antigrams(word1, word2)
+    word1.gsub!(/\W+/, '')
     word2.gsub!(/\W+/, '')
-    word3.delete! word2
-    if  (word3.length == word2.length)
+    word1.delete! word2
+    if  (word1.length == word2.length)
       return answer = "These words are antigrams and share no matching letters."
     end
   end

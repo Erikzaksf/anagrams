@@ -3,7 +3,8 @@ require ('anagrams')
 describe(Evaluate) do
   describe('#anagrams')do
     it ("return phrase this is an anagram when given two words containing the same letters")do
-      expect(Evaluate.anagrams("this","hits")).to(eq("These are anagrams."))
+      words = Evaluate.new("this", "hits")
+      expect(words.anagrams()).to(eq(answers ="These are anagrams."))
     end
     it ("return phrase this is an anagram even when given two words with different typecase")do
       expect(Evaluate.anagrams("taco cat","tac ocat")).to(eq("These are anagrams."))
